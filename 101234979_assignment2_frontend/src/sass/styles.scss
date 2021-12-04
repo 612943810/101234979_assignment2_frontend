@@ -1,0 +1,15 @@
+$fire-opal: #ee6352ff;
+$verdigris: #75b9beff;
+$violet-crayola: #963484ff;
+$jasmine: #f7dd72ff;
+$mindaro: #e5f77dff;
+$blue-munsell: #048ba8ff;
+
+
+$primary:$fire-opal;
+$secondary:$violet-crayola;
+$danger:$jasmine;
+$info:$mindaro;
+$success:$verdigris;
+$warning:$blue-munsell;
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
