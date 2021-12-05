@@ -1,6 +1,8 @@
 import React ,{useState,useEffect}from 'react'
 import axios from 'axios'
-import Button from 'react-bootstrap/Button'
+import UpdateButton from './UpdateButton'
+import DeleteButton from './DeleteButton'
+import ViewButton from './ViewButton'
 export default function EmployeeRows() {
     const [employee, setEmployee] = useState([])
     useEffect(() => {
@@ -11,11 +13,11 @@ export default function EmployeeRows() {
         })
     })
    const employeeList=employee.map((employeeView)=>{
-         return(<tr className="p-3">
+         return(<tr>
              <td>{employeeView.firstname}</td>
              <td>{employeeView.lastname}</td>
              <td>{employeeView.emailid}</td>
-             <td className=""><Button variant="warning">Update</Button> <Button variant="danger">Delete </Button> <Button variant="info">View</Button></td>
+             <td><UpdateButton/> <DeleteButton/> <ViewButton/> </td>
              </tr>)  
       })
     return (

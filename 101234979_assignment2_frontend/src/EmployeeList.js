@@ -9,7 +9,7 @@ export default function EmployeeList() {
         <div className="m-3">  
   <h1 className="text-center">Employee List</h1>  
   <CreateButton/>   
-  <Table striped bordered hover >
+  <Table striped bordered hover  variant="info">
       <thead bordered>
           <tr>
           <th>Employee First Name</th>
