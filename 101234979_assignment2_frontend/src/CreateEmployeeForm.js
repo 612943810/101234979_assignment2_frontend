@@ -20,11 +20,11 @@ const fullData={
 }
   axios.post("http://localhost:8080/api/v1/employees",fullData)
   .then((postData)=>{
-    //   setData({
-    //     firstname:'',
-    //     lastname:'',
-    //     emailid:'' 
-    //   })
+      setData({
+        firstname:'',
+        lastname:'',
+        emailid:'' 
+      })
   })
   .catch((err)=>console.log(err.response.data))
   navigateLink('/')
@@ -45,7 +45,7 @@ const fullData={
           <Button type="submit" variant="success" className="m-3">
             Save
           </Button>
-          <Button type="button" variant="danger">
+          <Button type="button" variant="danger" onClick={()=>navigateLink('/')}>
             Cancel
           </Button>
         </Form>

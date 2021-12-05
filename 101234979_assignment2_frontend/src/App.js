@@ -7,6 +7,8 @@ import EmployeeHeader from './EmployeeHeader';
 import EmployeeList from './EmployeeList';
 import { BrowserRouter,Routes,Route} from 'react-router-dom';
 import CreateEmployeeForm from './CreateEmployeeForm';
+import EditEmployeeForm from './EditEmployeeForm'
+import ViewEmployee from './ViewEmployee';
 function App() {
   return (
     <div className="text-center" >
@@ -15,6 +17,8 @@ function App() {
       <Routes>
         <Route path="/" element={<EmployeeList/>}/>
         <Route path="/add-employee/_add" element={<CreateEmployeeForm/>}/>
+        <Route path="/add-employee/:id" element={<EditEmployeeForm/>}/>
+        <Route path="/view-employee/:id" element={<ViewEmployee/>}/>
       </Routes> 
       </BrowserRouter>
 

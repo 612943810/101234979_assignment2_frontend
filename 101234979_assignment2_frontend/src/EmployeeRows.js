@@ -6,7 +6,7 @@ import ViewButton from './ViewButton'
 export default function EmployeeRows() {
     const [employee, setEmployee] = useState([])
     useEffect(() => {
-        axios.get('/api/v1/employees/')
+        axios.get('http://localhost:8080/api/v1/employees/')
         .then((employeeOutput)=>{
             setEmployee(employeeOutput.data)
      
@@ -17,7 +17,7 @@ export default function EmployeeRows() {
              <td>{employeeView.firstname}</td>
              <td>{employeeView.lastname}</td>
              <td>{employeeView.emailid}</td>
-             <td><UpdateButton/> <DeleteButton/> <ViewButton/> </td>
+             <td><UpdateButton id={employeeView._id}/> <DeleteButton id={employeeView._id}/> <ViewButton id={employeeView._id}/> </td>
              </tr>)  
       })
     return (

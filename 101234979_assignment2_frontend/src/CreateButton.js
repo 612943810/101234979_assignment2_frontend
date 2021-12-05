@@ -6,7 +6,7 @@ export default function CreateButton() {
     let navigationLink=useNavigate();
     return (
         <div className="text-center m-3">
-       <Button variant="success"onClick={()=>navigationLink("/add-employee/_add")}>Create</Button>     
+       <Button variant="success"  className="text-secondary"  onClick={()=>navigationLink("/add-employee/_add")}>Create</Button>     
         </div>
     )
 }
