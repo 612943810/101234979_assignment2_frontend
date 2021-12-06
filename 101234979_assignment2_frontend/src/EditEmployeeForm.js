@@ -49,7 +49,7 @@ navigateLink('/')
   return (
     <>
       <div className="text-center m-3">
-        <h1>Edit Employee</h1>
+        <h1>Update Employee</h1>
         <Form onSubmit={submitForm}>
           <Form.Group>
             <Form.Label>First Name:</Form.Label>
