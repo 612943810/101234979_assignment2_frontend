@@ -17,4 +17,7 @@ To run:
 ```
 npm start
 ```
-
+If any startup issues :
+```
+npm audit fix  --force
+```
