@@ -10,14 +10,10 @@ To install run the following:
 
 ```
 git clone https://github.com/612943810/101234979_assignment2_frontend.git
-cd 101234979_assignment2_frontend
 npm install
 ```
 To run:
 ```
-npm start
-```
-If any startup issues :
-```
-npm audit fix  --force
+npm run dev
+
 ```

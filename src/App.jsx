@@ -1,7 +1,4 @@
-import logo from './logo.svg';
-
-
-import 'bootstrap/dist/css/bootstrap.css'
+//import 'bootstrap/dist/css/bootstrap.css'
 import './App.css';
 import EmployeeHeader from './EmployeeHeader';
 import EmployeeList from './EmployeeList';

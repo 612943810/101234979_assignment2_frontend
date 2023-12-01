@@ -6,7 +6,7 @@ export default function ViewButton(props) {
     return (
       
         <>
-       <Button variant="info" onClick={()=>navigateLink(`/view-employee/${props.id}`)}>View</Button>     
+       <Button variant="info"   onClick={()=>navigateLink(`/view-employee/${props.id}`)}>View</Button>     
         </>
     )
 }
